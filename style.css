@@ -1,0 +1,586 @@
+*{
+  font-family: 'Noto Serif JP';
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #FFF6F5;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav a{
+  font-size: 20px;
+  color: #44160D;
+  text-decoration: none;
+  padding: 0 50px;
+}
+
+
+/* 1つめのセクション */
+.firstview{
+  background-color: #CDB0BB;
+  display: block;
+  text-align: center;
+  height: 630px;
+  position: relative;
+}
+
+.firstview img{
+  width: 600px;
+  padding-top: 30px;
+}
+
+.firstview-logo{
+  color: #FFF6F5;
+  font-size: 48px;
+  font-family: 'Pinyon Script', cursive;
+  position: absolute;
+  margin-left: 670px;
+  margin-top: -70px;
+}
+
+.firstview h1{
+  font-size: 32px;
+  color: #FFF6F5;
+  padding: 0 0 75px;
+}
+
+.firstview-box{
+  background-color: #FFF6F5;
+  display: block;
+  padding: 10px;
+  height: 150px;
+  width: 794px;
+  margin: auto;
+}
+
+.firstview-box h2{
+  font-size: 24px;
+  color: #C10943;
+  text-align: center;
+}
+
+.firstview-box p{
+  font-size: 16px;
+  color: #44160D;
+  text-align: center;
+}
+
+
+/* 2つめのセクション */
+.basic{
+  background-color: #FFF6F5;
+  height: 650px;
+}
+
+.basic h2{
+  font-size: 24px;
+  color: #44160D;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.basic-box{
+  position: relative;
+
+}
+
+.basic-box-top{
+  /* margin-left: 330px; */
+  margin-top: 50px;
+  /* position: relative; */
+  /* position: absolute; */
+  /* top: 0%; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+
+}
+
+.basic-img-1{
+  width: 240px;
+  position: absolute;
+}
+
+.basic-p-1{
+  position: absolute;
+  margin-top: 85px;
+  margin-left: 95px;
+  font-size: 24px;
+}
+
+.basic-img-3{
+  width: 70px;
+  position: absolute;
+  margin-left: 355px;
+  margin-top: 70px; 
+}
+
+.basic-box-right{
+  margin-left: 540px;
+}
+
+/* 変になっちゃう */
+.basic-text{
+  /* position: absolute;
+  margin-top: 220px; */
+  margin-left: 180px;
+}
+
+.basic-img-4{
+  position: absolute;
+}
+
+.vocalization{
+  position: absolute;
+  color: #44160D;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.basic-img-5{
+  position: absolute;
+  margin-left: 370px;
+  margin-top: 110px;
+}
+
+.basic-text-right{
+  margin-left: 600px;
+}
+
+
+/* 3つめのセクション */
+.work{
+  background: #CDB0BB;
+  height: 1020px;
+  padding: 100px 0;
+}
+
+.work h2{
+  font-size: 24px;
+  color: #FFF6F5;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.work h3{
+  color: #44160D;
+  font-size: 20px;
+  text-align: center;
+}
+
+.work p{
+  color: #44160D;
+  font-size: 16px;
+  text-align: center;
+}
+
+.slider-box{
+  background-color: #FFF6F5;
+  width: 300px;
+  height: 240px;
+}
+
+/* 1つめのスライダー */
+.slider{
+  display: flex;
+  padding-top: 105px;
+  padding-bottom: 140px;
+ }
+
+
+.slider .slick-slide {
+  transform: scale(0.8);
+  transition: all .5s;
+}
+
+.slider .slick-slide.slick-center{
+  transform: scale(1);
+}
+
+/* 2つめのスライダー */
+.slider2{
+  display: flex;
+  padding-bottom: 140px;
+ }
+
+ .slider2 .slick-slide {
+  transform: scale(0.8);
+  transition: all .5s;
+}
+
+.slider2 .slick-slide.slick-center{
+  transform: scale(1);
+}
+
+
+/* 4つ目のセクション */
+.theory{
+  position: relative;
+}
+
+.theory h2{
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  font-size: 24px;
+  color: #44160D;
+  padding-top: 80px;
+}
+
+.theory-subtitle{
+  text-align: center;
+  color: #C10943;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 腹式呼吸 */
+.breathing{
+  position: relative;
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.breathing-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+.breathing-text{
+  margin-left: 80px;
+}
+
+.breathing-text-top{
+  color: #44160D;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.breathing-text-bottom{
+  display: flex;
+  margin-left: 45px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.breathing-text-title{
+  color: #44160D;
+  font-size: 18px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.breathing-text-text{
+  color: #44160D;
+  font-size: 16px;
+  text-align: center;
+}
+
+.breathing-text-left{
+  display: block;
+  padding-right: 110px;
+}
+
+.breathing-text-right{
+  display: block;
+}
+
+.breathing-text-merit{
+  background-color: #FFF6F5;
+  padding: 20px;
+  border-radius: 20px;
+  border:1px solid #44160D;
+}
+
+.breathing-text-merit-top{
+  display: flex;
+  justify-content: center;
+}
+
+.breathing-text-merit-title{
+  color: #44160D;
+  font-size: 18px;
+}
+
+.breathing-text-merit-color{
+  color: #C10943;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.breathing-text-merit-text{
+  color: #44160D;
+  font-size: 16px;
+}
+
+/* 鼻濁音 */
+.voise{
+  position: relative;
+}
+
+.voise-img1{
+  width: 110px;
+  transform: rotate(13deg);
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -50px;
+}
+
+.voise-text-top{
+  color: #44160D;
+  font-size: 16px;
+  text-align: center;
+  margin: 40px 0 40px;
+}
+
+.voise-boxes{
+  margin-bottom: 200px;
+}
+
+.voise-box{
+  display: flex;
+  margin-bottom: 35px;
+  margin-left: 390px;
+}
+
+.voise-box img{
+  height: 40px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.voise-box p{
+  margin-left: 15px;
+  color: #44160D;
+  font-size: 16px;
+}
+
+.voise-img2{
+  width: 120px;
+  transform: rotate(10deg);
+  position: absolute;
+  margin-left: 1030px;
+  margin-top: -200px;
+}
+
+/* アクセント */
+.accent{
+  position: relative;
+}
+
+.accent-text-top{
+  color: #44160D;
+  font-size: 16px;
+  text-align: center;
+  margin: 40px 0 40px;
+}
+
+.accent-line{
+  position: absolute;
+  margin-left: 215px;
+  margin-top: 45px;
+}
+
+.accent-boxes{
+  text-align: center;
+}
+
+.accent-box{
+  display: inline-block;
+  text-align: center;
+  padding: 40px;
+}
+
+.accent-box h3{
+  color: #44160D;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.accent-texts{
+  display: flex;
+}
+
+.accent-text{
+  color: #44160D;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.accent-text-color{
+  color: #C10943;
+  font-size: 20px;
+  text-align: right;
+}
+
+.accent-box-down{
+  display: inline-block;
+  text-align: center;
+  padding: 40px;
+}
+
+.accent-box-down h3{
+  color: #44160D;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.accent-bottom{
+  background-color: #FFF6F5;
+  border-radius: 20px;
+  border:1px solid #44160D;
+  width: 560px;
+  height: 230px;
+  margin-left: 440px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.accent-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.accent-bottom p{
+  color: #44160D;
+  font-size: 16px;
+  text-align: center;
+}
+
+.accent-bottom-box{
+  display: flex;
+  margin: 20px 0 20px;
+  margin-left: 10px;
+}
+
+.accent-bottom-box img{
+  width: 40px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.accent-img{
+  width: 110px;
+  transform: rotate(-5deg);
+  position: absolute;
+  margin-left: 280px;
+  margin-top: -150px;
+}
+
+
+/* 5つ目のセクション */
+.uirouuri{
+  background-color: #FFF6F5;
+  height: 1220px;
+}
+
+.uirouuri h2{
+  font-size: 24px;
+  color: #44160D;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 90px;
+}
+
+.uirouuri-text{
+  position: relative;
+}
+
+.uirouuri-text-p{
+  background-color: #FFF6F5;
+  width: 890px;
+  height: 670px;
+  border:1px solid #44160D;
+  font-size: 24px;
+  color: #44160D;
+  line-height: 2em;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+rt{
+  font-size: 13px;
+}
+
+.box{
+  width: 890px;
+  height: 670px;
+  background: #E9A3B7;
+  position: absolute;
+  margin-left: 295px;
+  margin-top: 15px;
+  border:1px solid #44160D;
+}
+
+.uirouuri-audio p{
+  color: #44160D;
+  font-size: 16px;
+}
+
+
+/* フッター */
+footer{
+  background-color: #CDB0BB;
+  height: 405px;
+  text-align: center;
+  position: relative;
+}
+
+footer h2{
+  font-size: 24px;
+  color: #FFF6F5;
+  padding-top: 100px;
+}
+
+footer img{
+  width: 550px;
+  padding-top: 30px;
+}
+
+footer p{
+  color: #FFF6F5;
+  font-size: 46px;
+  font-family: 'Pinyon Script', cursive;
+  position: absolute;
+  margin-left: 670px;
+  margin-top: -70px;
+}
+
+#back-top a{
+  position: fixed;
+  right:70px;
+  bottom:30px;
+  transition: 1s;
+}
+
+#back-top a:hover{ 
+  opacity: 0.75;
+}
+
+#back-top img{
+  width: 75px;
+  height: auto;
+}

@@ -37,21 +37,24 @@ nav a{
   display: block;
   text-align: center;
   height: 630px;
+  /* position: relative; */
+}
+
+.firstview-logo{
   position: relative;
 }
 
-.firstview img{
+.firstview-logo img{
   width: 600px;
   padding-top: 30px;
 }
 
-.firstview-logo{
+.firstview-logo p{
   color: #FFF6F5;
   font-size: 48px;
   font-family: 'Pinyon Script', cursive;
-  position: absolute;
-  margin-left: 670px;
   margin-top: -70px;
+  margin-left: 60px;
 }
 
 .firstview h1{
@@ -81,6 +84,9 @@ nav a{
   text-align: center;
 }
 
+.sp{
+  display: none;
+}
 
 /* 2つめのセクション */
 .basic{
@@ -93,81 +99,88 @@ nav a{
   color: #44160D;
   text-align: center;
   padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 .basic-box{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:12px;
+}
+
+.basic-img-wrapper{
   position: relative;
-
-}
-
-.basic-box-top{
-  /* margin-left: 330px; */
-  margin-top: 50px;
-  /* position: relative; */
-  /* position: absolute; */
-  /* top: 0%; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-
-}
-
-.basic-img-1{
   width: 240px;
-  position: absolute;
+
 }
 
-.basic-p-1{
-  position: absolute;
-  margin-top: 85px;
-  margin-left: 95px;
+.basic-img-left{
+  width: 100%;
+}
+
+.basic-p-left{
   font-size: 24px;
-}
-
-.basic-img-3{
-  width: 70px;
   position: absolute;
-  margin-left: 355px;
-  margin-top: 70px; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-.basic-box-right{
-  margin-left: 540px;
+.basic-boxes{
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 
-/* 変になっちゃう */
-.basic-text{
-  /* position: absolute;
-  margin-top: 220px; */
-  margin-left: 180px;
+.frame{
+  position: relative;
+  display: inline-block;
+  width: 490px;
 }
 
-.basic-img-4{
+.frame-width{
+  background-color: #986E66;
+  border-radius: 10px;
+  height: 10px;
+  width: 60px;
   position: absolute;
 }
 
-.vocalization{
+.frame-height{
+  background-color: #986E66;
+  border-radius: 10px;
+  height: 60px;
+  width: 10px;
   position: absolute;
-  color: #44160D;
+}
+
+.frame p{
   font-size: 16px;
-  margin-left: 50px;
-  margin-top: 40px;
+  color: #44160D;
+  padding: 30px 50px;
 }
 
-.basic-img-5{
-  position: absolute;
-  margin-left: 370px;
-  margin-top: 110px;
+.frame-height.bottom{
+  right: 0;
+  bottom: 0;
 }
 
-.basic-text-right{
-  margin-left: 600px;
+.frame-width.bottom{
+  right: 0;
+  bottom: 0;
+}
+
+.basic-cross{
+  padding-top: 70px;
 }
 
 
 /* 3つめのセクション */
 .work{
   background: #CDB0BB;
-  height: 1020px;
+  height: 750px;
   padding: 100px 0;
 }
 
@@ -175,16 +188,16 @@ nav a{
   font-size: 24px;
   color: #FFF6F5;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
-.work h3{
+.slider-box h3{
   color: #44160D;
   font-size: 20px;
   text-align: center;
 }
 
-.work p{
+.slider-box p{
   color: #44160D;
   font-size: 16px;
   text-align: center;
@@ -194,14 +207,19 @@ nav a{
   background-color: #FFF6F5;
   width: 300px;
   height: 240px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* 1つめのスライダー */
 .slider{
   display: flex;
   padding-top: 105px;
-  padding-bottom: 140px;
- }
+  padding-bottom: 100px;
+  width: 960px;
+  margin: auto;
+}
 
 
 .slider .slick-slide {
@@ -217,9 +235,11 @@ nav a{
 .slider2{
   display: flex;
   padding-bottom: 140px;
- }
+  width: 960px;
+  margin: auto;
+}
 
- .slider2 .slick-slide {
+.slider2 .slick-slide {
   transform: scale(0.8);
   transition: all .5s;
 }
@@ -232,6 +252,8 @@ nav a{
 /* 4つ目のセクション */
 .theory{
   position: relative;
+  background-image: url(image/Group\ 141.png);
+  padding-top: 100px
 }
 
 .theory h2{
@@ -240,7 +262,6 @@ nav a{
   transform:translateX(-50%);
   font-size: 24px;
   color: #44160D;
-  padding-top: 80px;
 }
 
 .theory-subtitle{
@@ -253,8 +274,7 @@ nav a{
 /* 腹式呼吸 */
 .breathing{
   position: relative;
-  margin-top: 180px;
-  margin-bottom: 180px;
+  padding-top: 150px;
 }
 
 .breathing-box{
@@ -338,10 +358,10 @@ nav a{
 
 .voise-img1{
   width: 110px;
-  transform: rotate(13deg);
   position: absolute;
-  margin-left: 250px;
-  margin-top: -50px;
+  left: 50%;
+  top: 0;
+  transform: rotate(13deg) translate(-400%);
 }
 
 .voise-text-top{
@@ -352,13 +372,15 @@ nav a{
 }
 
 .voise-boxes{
-  margin-bottom: 200px;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 150px;
 }
 
 .voise-box{
   display: flex;
   margin-bottom: 35px;
-  margin-left: 390px;
 }
 
 .voise-box img{
@@ -375,10 +397,11 @@ nav a{
 
 .voise-img2{
   width: 120px;
-  transform: rotate(10deg);
   position: absolute;
-  margin-left: 1030px;
-  margin-top: -200px;
+  margin-top: 550px;
+  left: 50%;
+  top: 0;
+  transform: rotate(10deg) translate(400%);
 }
 
 /* アクセント */
@@ -393,12 +416,6 @@ nav a{
   margin: 40px 0 40px;
 }
 
-.accent-line{
-  position: absolute;
-  margin-left: 215px;
-  margin-top: 45px;
-}
-
 .accent-boxes{
   text-align: center;
 }
@@ -407,6 +424,7 @@ nav a{
   display: inline-block;
   text-align: center;
   padding: 40px;
+  width: 500px;
 }
 
 .accent-box h3{
@@ -424,18 +442,21 @@ nav a{
   color: #44160D;
   font-size: 15px;
   padding: 5px;
+  width: 370px;
 }
 
 .accent-text-color{
   color: #C10943;
   font-size: 20px;
   text-align: right;
+  width: 190px;
 }
 
 .accent-box-down{
   display: inline-block;
   text-align: center;
   padding: 40px;
+  width: 500px;
 }
 
 .accent-box-down h3{
@@ -451,9 +472,9 @@ nav a{
   border:1px solid #44160D;
   width: 560px;
   height: 230px;
-  margin-left: 440px;
   margin-top: 20px;
   margin-bottom: 150px;
+  margin: 0 auto;
 }
 
 .accent-title{
@@ -481,17 +502,18 @@ nav a{
 
 .accent-img{
   width: 110px;
-  transform: rotate(-5deg);
   position: absolute;
-  margin-left: 280px;
-  margin-top: -150px;
+  margin-top: 650px;
+  left: 50%;
+  top: 0;
+  transform: rotate(-5deg) translate(-400%);
 }
 
 
 /* 5つ目のセクション */
 .uirouuri{
-  background-color: #FFF6F5;
-  height: 1220px;
+  background-color: #FFF;
+  height: 1320px;
 }
 
 .uirouuri h2{
@@ -503,36 +525,24 @@ nav a{
 }
 
 .uirouuri-text{
-  position: relative;
-}
-
-.uirouuri-text-p{
   background-color: #FFF6F5;
   width: 890px;
   height: 670px;
   border:1px solid #44160D;
+  box-shadow: 20px 20px #E9A3B7;
+  margin: auto;
+}
+
+.uirouuri-text-p{
   font-size: 24px;
   color: #44160D;
   line-height: 2em;
-  margin: auto;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
+  padding-top: 60px;
+  padding-left: 40px;
 }
 
 rt{
   font-size: 13px;
-}
-
-.box{
-  width: 890px;
-  height: 670px;
-  background: #E9A3B7;
-  position: absolute;
-  margin-left: 295px;
-  margin-top: 15px;
-  border:1px solid #44160D;
 }
 
 .uirouuri-audio p{
@@ -540,6 +550,13 @@ rt{
   font-size: 16px;
 }
 
+.uirouuri-audio-top{
+  padding-top: 130px;
+}
+
+.uirouuri-audio-bottom{
+  padding-top: 80px;
+}
 
 /* フッター */
 footer{
@@ -555,18 +572,17 @@ footer h2{
   padding-top: 100px;
 }
 
-footer img{
+.footer-logo img{
   width: 550px;
   padding-top: 30px;
 }
 
-footer p{
+.footer-logo p{
   color: #FFF6F5;
   font-size: 46px;
   font-family: 'Pinyon Script', cursive;
-  position: absolute;
-  margin-left: 670px;
   margin-top: -70px;
+  margin-left: 60px;
 }
 
 #back-top a{
@@ -583,4 +599,141 @@ footer p{
 #back-top img{
   width: 75px;
   height: auto;
+}
+
+@media screen and (max-width: 1100px){
+.accent-box{
+  display: block;
+}
+
+.accent-box-down{
+  display: block;
+}
+
+.accent-texts{
+  display: block;
+}
+
+.accent-text-color{
+  text-align: right;
+}
+
+.accent-boxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accent-texts{
+  display: flex;
+}
+
+}
+
+@media screen and (max-width: 500px){
+
+header{
+  display: none;
+}
+
+
+/* 1つ目のセクション */
+.firstview-logo img{
+  width: 300px;
+}
+
+.firstview-logo p{
+  font-size: 24px;
+  margin-top: -40px;
+  margin-left: 30px;
+}
+
+.firstview h1{
+  font-size: 18px;
+  padding: 100px 0 75px;
+}
+
+.firstview-box{
+  height: 235px;
+  width: 365px;
+}
+
+.firstview-box h2{
+  font-size: 20px;
+}
+
+.firstview-box p{
+  font-size: 14px;
+}
+
+.sp{
+  display: block;
+}
+
+
+/* 2つ目のセクション */
+.basic{
+  height: 1250px;
+}
+
+.basic h2{
+  font-size: 20px;
+}
+
+.basic-boxes{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.basic-cross{
+  margin-bottom: 50px;
+}
+
+
+/* 3つ目のセクション */
+
+.breathing-box{
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 30px;
+}
+
+.breathing-text{
+  margin-left: 0;
+}
+
+.voise-boxes{
+  max-width: 430px;
+}
+
+.accent-bottom{
+  width: 350px;
+  height: 290px;
+}
+
+.voise-img1{
+  width: 80px;
+  margin-top: -20px;
+  transform: rotate(13deg) translate(-250%);
+}
+
+.voise-img2{
+  width: 80px;
+  margin-top: 800px;
+  transform: rotate(10deg) translate(150%);
+}
+
+.accent-img{
+  width: 80px;
+  margin-top: 1150px;
+  transform: rotate(-5deg) translate(-290%);
+}
+
+#back-top a{
+  right:530px;
+  bottom:30px;
+}
+
+
 }

@@ -215,10 +215,10 @@ nav a{
 /* 1つめのスライダー */
 .slider{
   display: flex;
-  padding-top: 105px;
-  padding-bottom: 100px;
   width: 960px;
   margin: auto;
+  margin-top: 105px;
+  margin-bottom: 100px;
 }
 
 
@@ -234,9 +234,9 @@ nav a{
 /* 2つめのスライダー */
 .slider2{
   display: flex;
-  padding-bottom: 140px;
   width: 960px;
   margin: auto;
+  margin-top: 100px;
 }
 
 .slider2 .slick-slide {
@@ -700,6 +700,14 @@ header{
   margin-bottom: 50px;
 }
 
+.frame{
+  width: 450px;
+}
+
+.frame p{
+  font-size: 14px;
+  padding: 30px 50px;
+}
 
 /* 4つ目のセクション */
 
@@ -709,8 +717,36 @@ header{
   gap: 30px;
 }
 
+.breathing-text-top{
+  font-size: 14px;
+  margin-left: 0;
+  text-align: center;
+}
+
 .breathing-text{
   margin-left: 0;
+}
+
+.breathing-text-text{
+  font-size: 14px;
+}
+
+.breathing-text-bottom{
+  display: flex;
+  margin-left: 0;
+  justify-content: center;
+}
+
+.breathing-text-merit-title{
+  font-size: 16px;
+}
+
+.breathing-text-merit-color{
+  font-size: 16px;
+}
+
+.breathing-text-merit-text{
+  font-size: 14px;
 }
 
 .voise-boxes{
@@ -722,26 +758,66 @@ header{
   height: 290px;
 }
 
+.voise-text-top{
+  font-size: 14px;
+}
+
+.voise-box p{
+  font-size: 14px;
+}
+
+.voise-boxes{
+  max-width: 380px;
+}
+
 .voise-img1{
   width: 80px;
   margin-top: -20px;
-  transform: rotate(13deg) translate(-250%);
+  transform: rotate(13deg) translate(-200%);
 }
 
 .voise-img2{
   width: 80px;
-  margin-top: 800px;
-  transform: rotate(10deg) translate(150%);
+  margin-top: 740px;
+  transform: rotate(10deg) translate(110%);
+}
+
+.accent-text{
+  width: 260px;
+}
+
+.accent-box{
+  text-align: left;
+}
+
+.accent-box-down{
+  text-align: left;
+}
+
+.accent-box h3{
+  text-align: center;
+}
+
+.accent-box-down h3{
+  text-align: center;
+}
+
+.accent-box{
+  width: 380px;
+}
+
+.accent-box-down{
+  width: 380px;
 }
 
 .accent-img{
   width: 80px;
-  margin-top: 1150px;
-  transform: rotate(-5deg) translate(-290%);
+  margin-top: 1250px;
+  transform: rotate(-5deg) translate(-240%);
 }
 
 #back-top a{
-  right:480px;
+  right:520px;
   bottom:30px;
 }
 
@@ -754,8 +830,15 @@ header{
   height: 1180px;
 }
 
+.uirouuri h2{
+  padding-top: 130px;
+}
+
+
 .uirouuri-text-p{
-  font-size: 16px;
+  font-size: 14px;
+  padding-top: 50px;
+  padding-left: 25px;
 }
 
 rt{
@@ -763,8 +846,8 @@ rt{
 }
 
 .uirouuri-text{
-  width: 450px;
-  height: 520px;
+  width: 400px;
+  height: 460px;
   box-shadow: 10px 10px #E9A3B7;
 }
 

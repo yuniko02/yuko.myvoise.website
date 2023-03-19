@@ -524,6 +524,9 @@ nav a{
   margin-bottom: 90px;
 }
 
+.uirouuri-box{
+}
+
 .uirouuri-text{
   background-color: #FFF6F5;
   width: 890px;
@@ -837,8 +840,9 @@ header{
 
 .uirouuri-text-p{
   font-size: 14px;
-  padding-top: 50px;
-  padding-left: 25px;
+  /* padding-top: 50px;
+  padding-left: 25px; */
+  margin: 0 auto;
 }
 
 rt{

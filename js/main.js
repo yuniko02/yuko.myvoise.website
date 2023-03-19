@@ -8,16 +8,16 @@ $(function($) {
         centerPadding: '20px',
         slidesToShow: 3,
 
-        responsive:[
-            {
-                breakpoint:501
-                settings:{
-                    arrows: false,
-                    dots: true,
-                    slidersToShow: 1,
-                },
-            },
-        ],
+        // responsive:[
+        //     {
+        //         breakpoint:501
+        //         settings:{
+        //             arrows: false,
+        //             dots: true,
+        //             slidersToShow: 1,
+        //         },
+        //     },
+        // ],
     });
 
     $('.slider2').slick({

@@ -545,9 +545,16 @@ rt{
   font-size: 13px;
 }
 
+.uirouuri-audio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .uirouuri-audio p{
   color: #44160D;
   font-size: 16px;
+  text-align: left;
 }
 
 .uirouuri-audio-top{
@@ -555,7 +562,7 @@ rt{
 }
 
 .uirouuri-audio-bottom{
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 /* フッター */
@@ -670,6 +677,9 @@ header{
   display: block;
 }
 
+.spnone{
+  display: none;
+}
 
 /* 2つ目のセクション */
 .basic{
@@ -691,7 +701,7 @@ header{
 }
 
 
-/* 3つ目のセクション */
+/* 4つ目のセクション */
 
 .breathing-box{
   flex-direction: column-reverse;
@@ -731,9 +741,47 @@ header{
 }
 
 #back-top a{
-  right:530px;
+  right:480px;
   bottom:30px;
 }
 
+#back-top img{
+  width: 50px;
+}
+
+/* 5つ目のセクション */
+.uirouuri{
+  height: 1180px;
+}
+
+.uirouuri-text-p{
+  font-size: 16px;
+}
+
+rt{
+  font-size: 10px;
+}
+
+.uirouuri-text{
+  width: 450px;
+  height: 520px;
+  box-shadow: 10px 10px #E9A3B7;
+}
+
+
+/* フッター */
+footer h2{
+  font-size: 20px;
+}
+
+.footer-logo img{
+  width: 300px;
+}
+
+.footer-logo p{
+  font-size: 24px;
+  margin-top: -40px;
+  margin-left: 30px;
+}
 
 }
